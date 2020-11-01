@@ -1,0 +1,52 @@
+Include in WP landing style HTML (single page site);
+1. Create wp, db;
+2. mkdir wp-content/themes/name-theme; //t.e. timber-theme
+3. make name-theme/index.php, name-theme/style.css;
+4. style.css:
+/*
+Theme Name: Theme name
+*/
+  //t.e. Timber-theme
+5. In wp-admin select created theme ("Theme name"); //t.e. Timber-theme
+6. mkdir wp-content/themes/name-theme/assets;
+7. mkdir
+  wp-content/themes/name-theme/assets/css with magnific-popup.css, normalize.css, style.css;
+  wp-content/themes/name-theme/assets/img with png, jpg;
+  wp-content/themes/name-theme/assets/js;
+8. make header.php, footer.php;
+9. in header.php add tagas <!DOCTYPE html>...</header>;
+9. in footer.php add tagas <footer ..>...</html>;
+10. Справочник wp-kama.ru;
+    разделы get_header, get_footer;
+11. in index.php before <main ..> add <?php get_header(); ?>
+  after </main> add <?php get_footer(); ?>;
+12. in name-theme/style.css styles from assets/css/style.css;
+13. make functions.php
+add <?php
+    (in wp-kama.ru search get enqueue style)
+      wp_enqueue_style
+      wp_enqueue_script
+      подключение через событие
+add:
+  add_action( 'wp_enqueue_scripts', 'timber_style' );
+  add_action( 'wp_enqueue_scripts', 'timber_scripts' );
+  function timber_style (){..
+  function timber_scripts.. //see files
+    ..get_stylesheet_uri for name-theme/style.css
+    ..get_template_directory_uri with path for assets/css
+14. for include <link>s
+  (in wp-kama.ru search wwp_head)
+  in index.php remove <link>s
+    without exlernal link t.e. <link href="htt.. // temporary?   if need include <link href="htt.. todo remove get_template_directory_uri
+      append <?php wp_head(); ?>
+<?php wp_footer(); ?>
+15. for include <script in footer.php remove <script>s
+      append <?php wp_footer(); ?> // after </footer> before </body>
+    (in wp-kama.ru search get enqueue script, deregister)
+  for deregister jquery (as default version in wp admin) for magnific (gallery) needed version
+    see wp_deregister_script in funtions.php
+     // array jquery t.e. load after jquery; nul - after body before </body>
+16. for static images
+      (in wp-kama.ru search blog info)
+in index.php in <img src="..> change <?php bloginfo( 'template_url' ); ?>/assets/img
+17. for chenge site title (in <title>) from wp_admin in header.php (use description);
