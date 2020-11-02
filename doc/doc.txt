@@ -50,3 +50,4 @@ add:
       (in wp-kama.ru search blog info)
 in index.php in <img src="..> change <?php bloginfo( 'template_url' ); ?>/assets/img
 17. for chenge site title (in <title>) from wp_admin in header.php (use description);
+2:45
