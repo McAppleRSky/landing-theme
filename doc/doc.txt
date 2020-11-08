@@ -50,4 +50,27 @@ add:
       (in wp-kama.ru search blog info)
 in index.php in <img src="..> change <?php bloginfo( 'template_url' ); ?>/assets/img
 17. for chenge site title (in <title>) from wp_admin in header.php (use description);
-2:45
+  t.e.
+    chenge to <header class="header" style="background-image: url(<?php the_field( 'top_bg' ) ?>);">
+      <img src="<?php the_field( 'header_sale' ) ?>" alt="">
+18.
+    18.1 добавить поле в группы полей/главная (после фото работ) для:
+      Строительство домов ..
+        и За 10 лет мы ..
+    ярлык поля - "Заглавие"
+      тип поля (не текст, а область текста)
+      перевод строк (без форматирования, или поменять на "автоматически добавлять <br>")
+    имя поля - main_title
+    18.2 добавить поле
+    ярлык поля - "Основной текст"
+      тип поля (не текст, а редактор wordpress)
+    имя поля - main_text
+    18.3 обновить
+    18.4 перетаскиваем в начало: Вкладка "Основной текст" -> область "Заглавие" -> область "Основной текст"
+    18.5 обновить
+    18.6 в index.php .main_title заменить текст на  <?php the_field('main_title') ?>
+      .main_text <?php the_field('main_text') ?>
+    18.7 Страница - Главная страница - основной текст заполняем:
+    Строительство домов ..
+      и За 10 лет мы ..
+3:00

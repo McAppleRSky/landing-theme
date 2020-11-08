@@ -2,14 +2,10 @@
 <main class="main">
   <div class="container">
     <div class="main_title">
-      Строительство домов и бань
-      из строганного и профилированного бруса
+      <?php the_field('main_title') ?>
     </div>
     <div class="main_text">
-      За 10 лет мы возвели больше250 домов и бань из бруса
-      ИМЕЕМ БОЛЬШОЙ ОПЫТ В СТРОИТЕЛЬСТВЕ
-      гарантируем качество и надежность всех аостроенных нами объектов
-      ГАРАНТИЯ НА ДОМА И БАНИ ИЗ БРУСА 3 ГОДА
+      <?php the_field('main_text') ?>
     </div>
     <div class="main_img">
       <img src="<?php bloginfo( 'template_url' ); ?>/assets/img/main_img.png" alt="">
