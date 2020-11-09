@@ -91,7 +91,8 @@
       некоторые фотографии построенных нами домов и бань из бруса
     </div>
     <div class="gallery_inner">
-      <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
+      <?php the_field('photo') ?>
+      <!-- <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
       <a href="img/item-2.jpg"><img src="img/item-2.jpg" alt=""></a>
       <a href="img/item-3.jpg"><img src="img/item-3.jpg" alt=""></a>
       <a href="img/item-4.jpg"><img src="img/item-4.jpg" alt=""></a>
@@ -106,7 +107,7 @@
       <a href="img/item-13.jpg"><img src="img/item-13.jpg" alt=""></a>
       <a href="img/item-14.jpg"><img src="img/item-14.jpg" alt=""></a>
       <a href="img/item-15.jpg"><img src="img/item-15.jpg" alt=""></a>
-      <a href="img/item-16.jpg"><img src="img/item-16.jpg" alt=""></a>
+      <a href="img/item-16.jpg"><img src="img/item-16.jpg" alt=""></a> -->
     </div>
     <div class="main_img">
       <img src="<?php bloginfo( 'template_url' ); ?>/assets/img/main_img.png" alt="">
