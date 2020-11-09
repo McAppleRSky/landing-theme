@@ -182,3 +182,49 @@ in index.php in <img src="..> change <?php bloginfo( 'template_url' ); ?>/assets
   можно минимальный/макс размер
   каталог перетазщить перед фото работ
   обновить
+23. множественная вкладка проекты
+  Добавить вкладку - ПРОЕКТЫ ДОМОВ (строчными) (ярлык)
+  тип - вкладка
+  Добавить поле ярлык - Проект
+  имя поля - project_item // возможно сделать два подчеркивания
+  Тип поля - (объект записи - не правильно). Запись
+  Фильтровать по типу записей - запись
+  Разрещить пустое значение - да
+  Выбрать несколько значений - да
+  Инструкции - выберите запись
+  Сдвинуть перед каталогом
+  обновить
+23.1
+  index.php
+    .project_item
+    <?php
+    $posts = get_field('project_item');
+    if( $posts ): ?>
+    <ul>
+    <?php foreach( $posts as $post): // variable mast be called $post (IMPORTANT) ?>
+      <?php setup_postdata($post); ?>
+      <li>
+      <!-- <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+      <span>Caustom field from $post:<?php the_field('author'); ?></span> -->
+      </li>
+    <?php endforeach; ?>
+    </ul>
+    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+  <?php endif; ?>
+              !!! li коментим, убираем
+              the_field('project_name');
+23.2
+  группы полей - группы полей -> добавить (группу полей) - Записи
+    оставить условия: Тип записи - равно - Запись
+  добавить поле
+    Ярлык - название проекта
+  имя поля - project_name
+  тип - текст
+  опубликовать (обновить)
+  Документация - www.advancedcustomfields.com
+    sample page .. relationship
+      edit screen (есть)
+        php relationship_field_name
+          $post
+23.3
+  Записи - без названия - свойства - дом1

@@ -12,10 +12,24 @@
     </div>
     <div class="project">
       <div class="project_title">
+        <?php the_field('project_title') ?>
         ПРОЕКТЫ ДОМОВ ИЗ БРУСА
       </div>
       <div class="project_item">
-        <div class="project_name">
+        <?php
+        $posts = get_field('project_item');
+        if( $posts ): ?>
+        <ul>
+        <?php foreach( $posts as $post): // variable mast be called $post (IMPORTANT) ?>
+          <?php setup_postdata($post); ?>
+          <li>
+            <?php the_field('project_name'); ?>
+          </li>
+        <?php endforeach; ?>
+        </ul>
+        <?php wp_reset_postdata(); ?>
+      <?php endif; ?>
+        <!-- <div class="project_name">
           Дом №1
         </div>
         <div class="project_title">
@@ -34,7 +48,7 @@
           <div class="project_images-item">
             <img src="img/project1-2.jpg" alt="">
           </div>
-        </div>
+        </div> -->
         <div class="project_name">
           Дом №1
         </div>
