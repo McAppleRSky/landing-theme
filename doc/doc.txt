@@ -102,7 +102,7 @@ in index.php in <img src="..> change <?php bloginfo( 'template_url' ); ?>/assets
       тип поля - Медиа (тестово? - не подходит). Выбтираем редактор wordpress
       Ярлык поля - Выберите фотографии
       Имя поля (не важно - как есть. Не годится). Пишем - photo
-    19.1 Создать галерею
+19.1 Создать галерею
     Нажимаем: создать новую галерею
     вставить галерею
     изменить (как и удалить). карандашек на общей панелие под фотографиями
@@ -111,7 +111,16 @@ in index.php in <img src="..> change <?php bloginfo( 'template_url' ); ?>/assets
     Размер - Полный
     Обновить галерею
     Обновить
-    19.2
+19.1.1 magnific popup, jquery - можно отключить т.к. используем плагин wp
+      если что, смотрим исходник страницы в браузере
+19.2
     index.php
       тег <div class="gallery_inner"> - опусташаем (коментим потомков)
       вставить <?php the_field('photo') ?>
+       .gallery_inner меняем на  #gallery_inner (id)
+    дистанция между строк:
+      style.css
+    gallery_inner + img - в комент - удалить
+    #gallery_inner .gallery .gallery-project_item -> m0 (margin: 0)
+    не забываем про кэширование ctrl+alt+r
+    

@@ -90,7 +90,7 @@
     <div class="gallery_text">
       некоторые фотографии построенных нами домов и бань из бруса
     </div>
-    <div class="gallery_inner">
+    <div id="gallery_inner">
       <?php the_field('photo') ?>
       <!-- <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
       <a href="img/item-2.jpg"><img src="img/item-2.jpg" alt=""></a>
