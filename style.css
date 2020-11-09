@@ -95,11 +95,15 @@ body{
 }
 .footer_email{
 	padding-top: 40px;
-	padding-bottom: 150px;
+	margin-bottom: 150px;
 	color: #2f8bc5;
 	/* text-decoration: underline; */
 	font-size: 30px;
 	font-weight: 300;
 	font-family: 'Lato', sans-serif;
+}
+.footer_email span{
+	display: inline-block;
 	border-bottom: 1px solid #2f8bc5;
+	padding-bottom: 5px;
 }

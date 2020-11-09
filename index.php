@@ -80,15 +80,17 @@
   </div>
   <div class="download">
     <img src="<?php bloginfo( 'template_url' ); ?>/assets/img/home-download.png" alt="">
-    <a href="#">Скачать весь каталог домов</a>
+    <div class="download_link">
+      <a href="<?php the_field('download_link') ?>" download>СКАЧАТЬ ВЕСЬ КАТАЛОГ ДОМОВ</a>
+    </div>
   </div>
   <div class="container">
     <div class="gallery"></div>
     <div class="gallery_title">
-      ФОТОГРАФИИ НАШИХ ДОМОВ
+      <?php the_field('gallery_title') ?>
     </div>
     <div class="gallery_text">
-      некоторые фотографии построенных нами домов и бань из бруса
+      <?php the_field('gallery_text') ?>
     </div>
     <div id="gallery_inner">
       <?php the_field('photo') ?>

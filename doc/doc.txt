@@ -143,10 +143,42 @@ in index.php in <img src="..> change <?php bloginfo( 'template_url' ); ?>/assets
   имя поля - gallery_text
   это перед "выберите фотографии" (в фото работ)
   обновить
+  index.php - the_field - gallery_title
 20. Добавить поле - Контакты (т.е. подвал сайта) (Ярлык поля)
   Тип поля - вкладка
+  заполняем поля в странице
   имя - пусто
-21. Добавить поле - Ярлык - email
+  заполняем поля в странице
+  обновить
+20.1 Добавить поле - Ярлык - email
   имя - email
   Инструкция - введите email
+  заполняем поля в странице
+  обновить
+20.2
+  footer.php - the_field - email
+  перед the the_field add tag span (child)
+  style.css - footer_email
+  padding-bottom заменить на margin-bottom
+  селектор .footer_email span
+    display: inline-block
+  border-bottom: 1px solid #2f8bc5 remove to span
+  pb5px (линию опусть)
+  обновить с чисткой кэш
+21.   style.css - download_link тоже можно добавить линию. Не делалось
+22.
+  (.download_link the_field download_link_text если менять надпись скачать католог.
+  Не делалось)
+  href add attribute download
+  href the_field download_link
+22.1
+  редактировать группы полей
+  Ярлык - Каталог
+  тип поля - Вкладка
+  добавить поле ярлык - Выберите файл
+  имя поля - download_link
+  тип поля - файл
+  возвращаемое значение - ссылка на файл
+  можно минимальный/макс размер
+  каталог перетазщить перед фото работ
   обновить
