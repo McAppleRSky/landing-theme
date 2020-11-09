@@ -113,6 +113,10 @@ in index.php in <img src="..> change <?php bloginfo( 'template_url' ); ?>/assets
     Обновить
 19.1.1 magnific popup, jquery - можно отключить т.к. используем плагин wp
       если что, смотрим исходник страницы в браузере
+      functions.php
+        timber_scripts
+          очистить
+            или в дальнейшем использовать для плагинов, отсутствующих в wp
 19.2
     index.php
       тег <div class="gallery_inner"> - опусташаем (коментим потомков)
@@ -122,5 +126,27 @@ in index.php in <img src="..> change <?php bloginfo( 'template_url' ); ?>/assets
       style.css
     gallery_inner + img - в комент - удалить
     #gallery_inner .gallery .gallery-project_item -> m0 (margin: 0)
-    не забываем про кэширование ctrl+alt+r
-    
+    #gallery_inner .gallery .gallery-item img //возможно такой глубокий селект не нужен
+      add
+      display: block;
+    	border: none;
+    не забываем про кэширование ctrl+shift+r
+19.2.1
+  можно отключить подписи фото в галереи, для этого найти элемент, присвоить стиль display - none
+    или в настройках - checkbox
+      но лучше не делать
+19.3 Текст и поле
+  поле
+  Ярлык поля - Заглавие галереи
+  имя поля - gallery_title
+  Ярлык поля - текст галереи
+  имя поля - gallery_text
+  это перед "выберите фотографии" (в фото работ)
+  обновить
+20. Добавить поле - Контакты (т.е. подвал сайта) (Ярлык поля)
+  Тип поля - вкладка
+  имя - пусто
+21. Добавить поле - Ярлык - email
+  имя - email
+  Инструкция - введите email
+  обновить

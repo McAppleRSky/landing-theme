@@ -92,22 +92,6 @@
     </div>
     <div id="gallery_inner">
       <?php the_field('photo') ?>
-      <!-- <a href="img/item-1.jpg"><img src="img/item-1.jpg" alt=""></a>
-      <a href="img/item-2.jpg"><img src="img/item-2.jpg" alt=""></a>
-      <a href="img/item-3.jpg"><img src="img/item-3.jpg" alt=""></a>
-      <a href="img/item-4.jpg"><img src="img/item-4.jpg" alt=""></a>
-      <a href="img/item-5.jpg"><img src="img/item-5.jpg" alt=""></a>
-      <a href="img/item-6.jpg"><img src="img/item-6.jpg" alt=""></a>
-      <a href="img/item-7.jpg"><img src="img/item-7.jpg" alt=""></a>
-      <a href="img/item-8.jpg"><img src="img/item-8.jpg" alt=""></a>
-      <a href="img/item-9.jpg"><img src="img/item-9.jpg" alt=""></a>
-      <a href="img/item-10.jpg"><img src="img/item-10.jpg" alt=""></a>
-      <a href="img/item-11.jpg"><img src="img/item-11.jpg" alt=""></a>
-      <a href="img/item-12.jpg"><img src="img/item-12.jpg" alt=""></a>
-      <a href="img/item-13.jpg"><img src="img/item-13.jpg" alt=""></a>
-      <a href="img/item-14.jpg"><img src="img/item-14.jpg" alt=""></a>
-      <a href="img/item-15.jpg"><img src="img/item-15.jpg" alt=""></a>
-      <a href="img/item-16.jpg"><img src="img/item-16.jpg" alt=""></a> -->
     </div>
     <div class="main_img">
       <img src="<?php bloginfo( 'template_url' ); ?>/assets/img/main_img.png" alt="">

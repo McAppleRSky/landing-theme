@@ -80,8 +80,12 @@ body{
 	color: #d0662d;
 	font-weight: 700;
 }
-#gallery_inner .gallery-item{
+#gallery_inner .gallery .gallery-item{
 	margin: 0;
+}
+#gallery_inner .gallery .gallery-item img{
+	display: block;
+	border: none;
 }
 .footer{
 	text-align: center;
