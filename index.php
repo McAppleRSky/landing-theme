@@ -13,7 +13,6 @@
     <div class="project">
       <div class="project_title">
         <?php the_field('project_title') ?>
-        ПРОЕКТЫ ДОМОВ ИЗ БРУСА
       </div>
       <div class="project_item">
         <?php
