@@ -14,99 +14,40 @@
       <div class="project_title">
         <?php the_field('project_title') ?>
       </div>
+
       <div class="project_item">
         <?php
         $posts = get_field('project_item');
         if( $posts ): ?>
         <ul>
-        <?php foreach( $posts as $post): // variable mast be called $post (IMPORTANT) ?>
+        <?php foreach( $posts as $post): ?>
           <?php setup_postdata($post); ?>
           <li>
             <div class="project_name">
               <?php the_field('project_name'); ?>
             </div>
-            <div class="project_title">
+            <div class="project_size">
               <?php the_field('project_size'); ?>
             </div>
-<div class="project_area">
-  <?php the_field('project_area'); ?>
-</div>
-<div class="project_price">
-  <?php the_field('project_price'); ?>
-</div>
-<div class="project_images">
-  <div class="project_images-item">
-    <img src="img/project1-1.jpg" alt="">
-  </div>
-  <div class="project_images-item">
-    <img src="img/project1-2.jpg" alt="">
-  </div>
+            <div class="project_area">
+              <?php the_field('project_area'); ?>
+            </div>
+            <div class="project_price">
+              <?php the_field('project_price'); ?>
+            </div>
+            <div class="project_images">
+              <div class="project_images-item">
+                <img src="<?php the_field('project_images-item-1'); ?>" alt="">
+              </div>
+              <div class="project_images-item">
+                <img src="<?php the_field('project_images-item-2'); ?>" alt="">
+              </div>
+            </div>
           </li>
         <?php endforeach; ?>
         </ul>
         <?php wp_reset_postdata(); ?>
       <?php endif; ?>
-        <!-- <div class="project_name">
-          Дом №1
-        </div>
-        <div class="project_title">
-          Размер дома: 6 х 6
-        </div>
-        <div class="project_area">
-          Общая площадь дома: 54 кв. м
-        </div>
-        <div class="project_price">
-          Стоимость - 402 000 рублей
-        </div>
-        <div class="project_images">
-          <div class="project_images-item">
-            <img src="img/project1-1.jpg" alt="">
-          </div>
-          <div class="project_images-item">
-            <img src="img/project1-2.jpg" alt="">
-          </div>
-        </div> -->
-        <!-- <div class="project_name">
-          Дом №1
-        </div>
-        <div class="project_title">
-          Размер дома: 6 х 6
-        </div>
-        <div class="project_area">
-          Общая площадь дома: 54 кв. м
-        </div>
-        <div class="project_price">
-          Стоимость - 402 000 рублей
-        </div>
-        <div class="project_images">
-          <div class="project_images-item">
-            <img src="img/project2-1.jpg" alt="">
-          </div>
-          <div class="project_images-item">
-            <img src="img/project2-2.jpg" alt="">
-          </div>
-        </div>
-        <div class="project_name">
-          Дом №1
-        </div>
-        <div class="project_title">
-          Размер дома: 6 х 6
-        </div>
-        <div class="project_area">
-          Общая площадь дома: 54 кв. м
-        </div>
-        <div class="project_price">
-          Стоимость - 402 000 рублей
-        </div>
-        <div class="project_images">
-          <div class="project_images-item">
-            <img src="img/project3-1.jpg" alt="">
-          </div>
-          <div class="project_images-item">
-            <img src="img/project3-2.jpg" alt="">
-          </div>
-        </div> -->
-      </div>
     </div>
   </div>
   <div class="download">
