@@ -22,7 +22,25 @@
         <?php foreach( $posts as $post): // variable mast be called $post (IMPORTANT) ?>
           <?php setup_postdata($post); ?>
           <li>
-            <?php the_field('project_name'); ?>
+            <div class="project_name">
+              <?php the_field('project_name'); ?>
+            </div>
+            <div class="project_title">
+              <?php the_field('project_size'); ?>
+            </div>
+<div class="project_area">
+  <?php the_field('project_area'); ?>
+</div>
+<div class="project_price">
+  <?php the_field('project_price'); ?>
+</div>
+<div class="project_images">
+  <div class="project_images-item">
+    <img src="img/project1-1.jpg" alt="">
+  </div>
+  <div class="project_images-item">
+    <img src="img/project1-2.jpg" alt="">
+  </div>
           </li>
         <?php endforeach; ?>
         </ul>
