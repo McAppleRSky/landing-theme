@@ -49,7 +49,7 @@
             <img src="img/project1-2.jpg" alt="">
           </div>
         </div> -->
-        <div class="project_name">
+        <!-- <div class="project_name">
           Дом №1
         </div>
         <div class="project_title">
@@ -88,7 +88,7 @@
           <div class="project_images-item">
             <img src="img/project3-2.jpg" alt="">
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
