@@ -74,12 +74,28 @@ body{
 .main_img{
 	padding: 90px 0;
 }
+.project ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
 .project_title{
 	margin-bottom: 110px;
 	font-size: 41px;
 	color: #d0662d;
 	font-weight: 700;
 }
+.project_item{
+	margin-bottom: 110px;
+	padding: 0;
+}
+.project_name{
+	font-weight: 700;
+	font-size: 32px;
+}
+/* .project_size,
+.project_area{
+} */
 #gallery_inner .gallery .gallery-item{
 	margin: 0;
 }
