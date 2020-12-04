@@ -51,7 +51,7 @@
     </div>
   </div>
   <div class="download">
-    <img src="<?php bloginfo( 'template_url' ); ?>/assets/img/home-download.png" alt="">
+    <img src="<?php bloginfo( 'template_url' ); ?>/assets/img/home_.png" alt="">
     <div class="download_link">
       <a href="<?php the_field('download_link') ?>" download>СКАЧАТЬ ВЕСЬ КАТАЛОГ ДОМОВ</a>
     </div>
